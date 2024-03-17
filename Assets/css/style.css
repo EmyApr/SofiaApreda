@@ -119,7 +119,7 @@ p, ul{
 }
 .button{
     position: relative;
-    z-index: 2;
+    z-index: 3;
     background-color: var(--button-color);
     border: 3px solid black;
     padding:0.5rem 3rem;
@@ -147,12 +147,25 @@ p, ul{
     border: 2px dashed var(--button-color);
 
 }
+.button-set:hover .button-shadow-white{
+    transform: translate(-5px, -2px); 
+    border: 2px dashed var(--button-color);
+}
+
 .button-set:hover .button{
     transform: translate(5px, 2px);
     box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.164) inset;
     
 }
-
+.button-shadow-white{
+    position: relative;
+    z-index: 2;
+    top: -30px;
+    left: 23px;
+    height: 43px;
+    border-radius: 3rem;
+    border: 2px dashed white;
+}
 
 /*==============REUSABLE MOBILE CSS CLASSES=============*/
 @media (max-width: 770px){
@@ -443,26 +456,32 @@ nav ul{
 /*===========Hero section===========*/
 .hero-homepage{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 590px;
 }
 .hero-homepage .hero-overlay{
     width: 100%;
-    height:50vh; 
+    height:590px; 
     z-index: 80;
     position: absolute;
-    box-shadow: 0px 5000px 500px rgba(0, 0, 0, 0.363) inset;
+    top: 0;
+    box-shadow: 500px 400px 300px rgba(0, 0, 0, 0.363) inset;
 }
 .hero-homepage, img{
-    height:50vh; 
+    height:590px; 
     width: 100%;
     object-fit: cover;
-    object-position: 50% 30%;
+    top: 0;
 }
 .hero-blur{
-    height: 10vh;
+    height: 590px;
     width: 100%;
     background: linear-gradient(0deg, black, transparent);
     z-index: 20;
     position: absolute;
+    top: 0;
     bottom: 0;
 }
 .hero_wavey-banner{
@@ -485,14 +504,27 @@ nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;    
-    padding-top: 30px;
 }
 .hero-text{
-    z-index: 2;
+    position: absolute;
+    z-index: 90;
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    height: 500px;
+    margin-left: 10%;
+    gap: 20px;
+    top: 90px;
+    width: 500px;
+}
+.hero-text h2{
+    width: 500px;
+    font-size: 70px;
+}
+.hero-text p{
+    width: 530px;
+    font-size: 25px;
 }
 .wavey-banner_down{
     z-index: 1;
@@ -529,28 +561,36 @@ nav ul{
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='41' height='40' viewBox='0 0 41 40' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.4118 3.63636C7.39516 3.63636 4.13905 6.89247 4.13905 10.9091V29.0909C4.13905 33.1075 7.39516 36.3636 11.4118 36.3636H29.5936C33.6102 36.3636 36.8663 33.1075 36.8663 29.0909V10.9091C36.8663 6.89247 33.6102 3.63636 29.5936 3.63636H11.4118ZM0.502686 10.9091C0.502686 4.88417 5.38685 0 11.4118 0H29.5936C35.6185 0 40.5027 4.88417 40.5027 10.9091V29.0909C40.5027 35.1158 35.6185 40 29.5936 40H11.4118C5.38685 40 0.502686 35.1158 0.502686 29.0909V10.9091Z' fill='%23D60000'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M21.382 14.5259C20.2471 14.3576 19.088 14.5515 18.0697 15.0799C17.0513 15.6083 16.2255 16.4444 15.7097 17.4692C15.1939 18.494 15.0143 19.6553 15.1966 20.788C15.3789 21.9208 15.9137 22.9672 16.7249 23.7784C17.5362 24.5897 18.5826 25.1245 19.7153 25.3068C20.848 25.489 22.0094 25.3095 23.0342 24.7937C24.059 24.2779 24.8951 23.452 25.4235 22.4337C25.9519 21.4153 26.1457 20.2563 25.9774 19.1214C25.8058 17.9638 25.2663 16.8921 24.4388 16.0645C23.6113 15.237 22.5396 14.6976 21.382 14.5259ZM16.3949 11.8522C18.0922 10.9715 20.0239 10.6484 21.9154 10.9289C23.8447 11.215 25.6309 12.1141 27.0101 13.4932C28.3893 14.8724 29.2884 16.6586 29.5745 18.588C29.8549 20.4795 29.5319 22.4112 28.6512 24.1085C27.7705 25.8058 26.3771 27.1821 24.6691 28.0418C22.9611 28.9015 21.0255 29.2007 19.1376 28.8969C17.2497 28.5932 15.5057 27.7018 14.1536 26.3497C12.8015 24.9976 11.9102 23.2536 11.6064 21.3658C11.3027 19.4779 11.6019 17.5423 12.4616 15.8343C13.3213 14.1263 14.6976 12.7329 16.3949 11.8522Z' fill='%23D60000'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M28.6852 9.99982C28.6852 8.99567 29.4992 8.18164 30.5034 8.18164H30.5215C31.5257 8.18164 32.3397 8.99567 32.3397 9.99982C32.3397 11.004 31.5257 11.818 30.5215 11.818H30.5034C29.4992 11.818 28.6852 11.004 28.6852 9.99982Z' fill='%23D60000'/%3E%3C/svg%3E");
 }
 
-@media (max-width: 1000px){
-    .block{
-        height: 80px;
+@media (max-width: 800px){
+
+    .hero-text{
+        gap: 30px;
+        top: 100px;
+        width: 500px;
     }
-}
-@media (max-width: 590px){
+    .hero-text h2{
+        width: 500px;
+        font-size: 60px;
+    }
+    .hero-text p{
+        width: 430px;
+        font-size: 20px;
+    }
     .block{
-        height: 150px;
+        height: 100px
     }
     .wavey-banner_container{
-        padding: 0 10%;
-        padding-top: 20px;
-        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: -50px;
+        z-index: 80;
+        gap: 10px;
     }
-    .hero-text{
-        max-width: 180px;
-        gap: 5px;
-    }
-    .social-icons{
-        gap: 8px;
+    .button-set{
+        width: max-content;
     }
 }
+
 
 
 /*=================gallery==========================*/
