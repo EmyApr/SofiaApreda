@@ -888,7 +888,9 @@ textarea{
     justify-content: space-between;
 }
 
-
+.anchor-offset{
+    offset-anchor: 20px 0;
+}
 
 /* ---------------------------------------------------------------------------
 SECONDARY PAGES - END
