@@ -194,7 +194,7 @@ p, ul{
         letter-spacing: var(--title-mob-spacing);
         font-weight: 700;}  
     p, ul{
-        font-size: var(--p-mob-font-size);
+        /* font-size: var(--p-mob-font-size); */
         letter-spacing: var(--body-mob-spacing);
     }
     .p-large{
@@ -784,80 +784,12 @@ nav ul{
 }
 
 /* SECONDARY - price list page  */
-.price-list{
-    text-align: center;
-    width: 100%;
-}
-.price-list .price-list_section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.price-list h2{
-    font-size: 40px;
-    padding-bottom: 15px;
-}
-.price-list h3{
-    padding-bottom: 15px;
-}
-.price-list p{
-    font-size: 15px;
-}
-.price-list_item{
-    display: flex;
-    flex-direction: row;
-    width: 300px;
-    padding: 3px 0px;
-    justify-content: space-between;
 
-}
-.price-list_item .price-list_title{
-    font-size: 15px;
+
+.price-list_item .price-list_title p{
+    font-size: 30px;
     font-weight: 900;
-    text-align: left;
 }
-
-.price-list_item .price-list_price{
-    font-size: 15px;
-    text-align: right;
-}
-.price-list_item span{
-    font-size: smaller;
-}
-.price-list_section{
-    width: 100%;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-}
-.price-list_menu{
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 50px 0;
-}
-.price-list_menu:not(:last-of-type){
-    border-bottom: 5px solid #D60000;
-
-}
-.price-list_item .price-list_sub-menu{
-    border-left: 3px solid black;
-    margin-top: 5px;
-    padding: 0 0;
-}
-.price-list_item .price-list_sub-menu .price-list_title{
-    padding-left: 15px;
-}
-.price-list_item .price-list_sub-menu .price-list_sub-item{
-    display: flex;
-    flex-direction: row;
-    width: 300px;
-    padding: 2px 0px;
-    justify-content: space-between;
-}
-
-
 
 /* ---------------------------------------------------------------------------
 SECONDARY PAGES - END
