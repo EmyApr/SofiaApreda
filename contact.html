@@ -39,7 +39,7 @@
             </a>
         </div>
         <ul class="main-menu">
-            <li class="menu-item"><a  href="/#services">SERVICES</a></li>
+            <li class="menu-item"><a  href="/price-list.html">SERVICES</a></li>
             <li class="menu-item"><a  href="/#gallery">GALLERY</a></li>
             <li class="menu-item"><a  href="/contact.html">CONTACT</a></li>  
  
@@ -50,7 +50,7 @@
             <span></span>   
         </button>
         <ul class="mobile-menu">
-            <li class="menu-item"><a href="/#services">SERVICES</a></li>
+            <li class="menu-item"><a href="/price-list.html">SERVICES</a></li>
             <li class="menu-item"><a  href="/#gallery">GALLERY</a></li>
             <li class="menu-item"><a  href="/contact.html">CONTACT</a></li>
   
@@ -89,15 +89,18 @@
 
     <form name="contact" netlify>
         <p>
-          <label>Name <input type="text" name="name" /></label>
+            <label>Name: </label><input class="contact-name" type="text" name="name" />
         </p>
         <p>
-          <label>Email <input type="email" name="email" /></label>
+            <label>Email: </label><input class="contact-email" type="email" name="email" />
         </p>
         <p>
-          <button type="submit">Send</button>
+            <label>Message: </label><textarea class="contact-message" name="message"></textarea>
         </p>
-      </form>
+        <p>
+        <button class="button" type="submit">SUBMIT</button>
+        </p>
+    </form>
 
 
 </div>

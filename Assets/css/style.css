@@ -783,6 +783,37 @@ nav ul{
     font-size: 20px;
 }
 
+.contact form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact form p{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form label{
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+}
+.contact form input,textarea{
+    font-size: 15px;
+    width:300px;
+    font-family: var(--body-font);
+    padding: 10px;
+    margin-top: 10px;
+}
+textarea{
+    height: 200px;
+}
+
 /* SECONDARY - price list page  */
 .price-list{
     text-align: center;
