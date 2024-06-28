@@ -217,6 +217,8 @@ nav{
     font-family: var(--header-font);
     justify-content: space-between;
     padding: 0 10%;
+    overflow: hidden;
+
 }
 nav ul{
     font-family: var(--header-font);
